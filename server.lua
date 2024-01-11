@@ -1,5 +1,4 @@
-RegisterNetEvent("carRental:pay")
-AddEventHandler("carRental:pay", function(id, table)
+RegisterNetEvent(cache.resource .. ":server:pay", function(id, table)
     if table ~= nil then
         local car = table.car
         if not car then return end
